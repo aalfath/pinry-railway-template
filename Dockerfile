@@ -10,7 +10,7 @@ COPY patches/serializers.py /pinry/core/serializers.py
 
 # Settings read from environment variables; all state lives in /data.
 COPY railway/local_settings.py /pinry/pinry/settings/local_settings.py
-COPY railway/nginx-site.conf /etc/nginx/sites-enabled/default.template
+COPY railway/nginx-site.conf /etc/nginx/pinry-site.template
 COPY railway/start.sh /railway-start.sh
 RUN chmod 755 /railway-start.sh && rm -f /etc/nginx/sites-enabled/default
 

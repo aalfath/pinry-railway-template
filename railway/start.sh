@@ -8,7 +8,7 @@ cd /pinry
 mkdir -p /data/static/media
 
 # nginx listens on $PORT and proxies /api and /admin to gunicorn on 127.0.0.1:8000.
-sed "s/__PORT__/${PORT}/g" /etc/nginx/sites-enabled/default.template > /etc/nginx/sites-enabled/default
+sed "s/__PORT__/${PORT}/g" /etc/nginx/pinry-site.template > /etc/nginx/sites-enabled/default
 
 python manage.py collectstatic --noinput -v 0
 python manage.py migrate --noinput
