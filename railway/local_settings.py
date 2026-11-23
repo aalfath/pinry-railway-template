@@ -35,6 +35,9 @@ TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ["*"]
 
+# Railway terminates TLS at its edge; nginx passes the original scheme on.
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
