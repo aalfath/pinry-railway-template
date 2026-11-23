@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/pinry?utm_medium=integration&utm_source=button&utm_campaign=pinry)
+
 # Pinry on Railway
 
 This repo packages [Pinry](https://github.com/pinry/pinry), a self-hosted tiling image board for saving, tagging and sharing images, videos and web pages, as a one-click Railway template.
