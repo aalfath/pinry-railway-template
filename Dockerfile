@@ -17,5 +17,5 @@ RUN chmod 755 /railway-start.sh && rm -f /etc/nginx/sites-enabled/default
 ENV DJANGO_SETTINGS_MODULE=pinry.settings.docker \
     PORT=8080
 EXPOSE 8080
-VOLUME ["/data"]
+# The /data volume is attached by the Railway template (Railway rejects VOLUME).
 CMD ["/railway-start.sh"]
