@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-23: Deploy on Railway button
+
+- README only: adds the Deploy on Railway button for the published template `pinry`. No change to the app or its settings.
+
 ## 2026-11-23: Pinry 2.1.13
 
 - First release of the template: Pinry 2.1.13 (`getpinry/pinry@sha256:9a619749…`), SQLite on a `/data` volume, admin account created on first start, self sign-up off by default.
